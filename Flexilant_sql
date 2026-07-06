@@ -1,0 +1,11 @@
+SQL TASK 1 price changes
+select y.product_id, y.product_name, y.price old_price, t. price new_price from yesterday y join today t on y.product_id = t.productg_id where y.price <> t.price
+
+SQL TASK 2 New products
+Select t.product_id, t.product_name, t.price,t.status from yesterday y join today t on y.produvt_id=t.product.id where y.product_id<>t.product id
+
+SQL TASK 3 Missing Products
+Select y.product_id, y.product_name, y.price,y.status from yesterday y join today t on y.produvt_id=t.product.id where y.product_id<>t.product id
+
+SQL TASK 4 Statusa Changes
+Select y.product_id, y.product_name, y.staus old_status t.status new_status, from yesterday y join today t on y.product_id=t.product.id where y.status<>t.status
